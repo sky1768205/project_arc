@@ -9,6 +9,7 @@ import PlantDetail from './components/Plants/PlantDetail';
 import PlantForm from './components/Plants/PlantForm';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
+import Home from './components/Plants/Home';
 import Cart from './components/Cart/Cart';
 import './App.css';
 
@@ -21,7 +22,8 @@ function App() {
             <Header />
             <main className="main-content">
               <Routes>
-                <Route path="/" element={<PlantList />} />
+                 <Route path="/" element={<Home />} />
+                <Route path="/plants" element={<PlantList />} />
                 <Route path="/plants/:id" element={<PlantDetail />} />
                 <Route path="/create-plant" element={<PlantForm />} />
                 <Route path="/login" element={<Login />} />

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .loading {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .error {
+            color: #c62828;
+            background: #ffebee;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .links {
+            margin-top: 2rem;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌿 PlantStore</h1>
+        <p class="loading">Загрузка приложения...</p>
+        <p>Если приложение не загружается, перейдите по ссылкам ниже:</p>
+        <div class="links">
+            <a href="http://localhost:3000">React приложение</a>
+            <a href="/admin">Админ-панель</a>
+            <a href="/api/plants/">API растений</a>
+        </div>
+    </div>
+</body>
